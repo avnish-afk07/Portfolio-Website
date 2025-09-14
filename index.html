@@ -159,22 +159,23 @@
     </footer>
   </div>
   <script>
-  const logo = document.querySelector('.logo'); /* edited */
-  const nav = document.getElementById('topNav'); /* edited */
+  const logo = document.querySelector('.logo'); // edited
+  const nav = document.getElementById('topNav'); // edited
 
   logo.addEventListener('click', () => {
-    nav.classList.toggle('show'); /* toggle nav visibility on click */ /* edited */
+    nav.classList.toggle('show'); // toggle slide-down menu // edited
   });
 
-  // Smooth scroll for in-page links
+  // Smooth scroll and hide menu on link click
   document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener('click', e => {
       e.preventDefault();
       document.querySelector(link.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
-      nav.classList.remove('show'); // hide nav after clicking (mobile) /* edited */
+      nav.classList.remove('show'); // hide menu after click // edited
     });
   });
 </script>
+
 
 </body>
 </html>
