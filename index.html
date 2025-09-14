@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Avnish — Portfolio</title>
+  <!-- <meta name="description" content="Avnish | Freshers - S Club | Dark purple neon portfolio" /> -->
   <link rel="stylesheet" href="./style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -32,7 +33,7 @@
       <section class="hero">
         <div class="hero-left card intro">
           <h1 class="hero-title">Hey, I'm <span class="neon">Avnish</span></h1>
-          <p class="hero-sub">A CSE Student at Chitkara University. This portfolio is built with HTML & CSS only — dark theme with purple neon accents.</p>
+          <p class="hero-sub">A CSE Student at Chitkara University. This portfolio is built with HTML &amp; CSS only — dark theme with purple neon accents.</p>
 
           <div class="cta-row">
             <a class="btn" href="#projects">View Projects</a>
@@ -43,6 +44,7 @@
 
         <aside class="hero-right card profile" aria-label="Profile card">
           <div class="avatar">
+            <!-- Replace with your photo URL or local file -->
             <!-- <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop&s=0d7b8f29bb7d6f2f2b5f88b1a1d1c3dd" alt="Avnish profile image"> -->
           </div>
           <div class="meta">
@@ -79,7 +81,7 @@
           <h2 class="section-title"><span class="dot" aria-hidden="true"></span> Quick Facts</h2>
           <div class="panel facts">
             <p><strong>Location:</strong> Kurukshetra, INDIA</p>
-            <p><strong>Availability:</strong> Open for student projects, interviews & Tech Club/Community Roles</p>
+            <p><strong>Availability:</strong> Open for student projects, interviews &amp; Tech Club/Community Roles</p>
           </div>
         </aside>
       </section>
@@ -101,16 +103,15 @@
               <div class="thumb">P2</div>
               <div class="proj-body">
                 <h3 class="proj-title">Portfolio Template</h3>
-                <p class="proj-desc">Personal portfolio theme page with dark neon aesthetics.</p>
+                <p class="proj-desc">Personal portfolio theme page with dark neon aesthetics and fully customizable and accessible throughout the devices.(this template).</p>
               </div>
             </article>
 
             <article class="project">
               <div class="thumb">P3</div>
               <div class="proj-body">
-                <h3 class="proj-title">Message Encoder&Decoder</h3>
-                <p class="proj-desc">Simple Python message encoder and decoder, built for encrypted communication through a simple two-way programme.</p>
-              </div>
+                <h3 class="proj-title"> Message Encoder&Decoder</h3>
+                <p class="proj-desc">Simple Python message encoder and decoder, built for encrypted communication through a simple two-way programme.
             </article>
           </div>
         </div>
@@ -138,6 +139,7 @@
               <div class="contact-item"><strong>Email</strong><span class="contact-value">avnishsaini0807@gmail.com</span></div>
               <div class="contact-item"><strong>Phone</strong><span class="contact-value">+91 9053321200</span></div>
               <div class="contact-item"><strong>Location</strong><span class="contact-value">Kurukshetra, INDIA</span></div>
+              <!-- <div class="contact-item"><strong>Club</strong><span class="contact-value">S Club (Freshers)</span></div> -->
             </div>
           </div>
         </div>
@@ -145,7 +147,7 @@
         <aside class="right-col">
           <h2 class="section-title"><span class="dot" aria-hidden="true"></span> Resume</h2>
           <div class="panel resume-panel">
-            <p class="resume-note">My Resume is here.</p>
+            <p class="resume-note">My Resume is here...</p>
             <a class="btn" href="#" role="button" aria-disabled="true">Download PDF</a>
           </div>
         </aside>
@@ -153,28 +155,8 @@
     </main>
 
     <footer class="site-footer">
-      <small>Made by Avnish :) </small>
+      <small>Made by Avnish:)</small>
     </footer>
   </div>
-
-  <!-- Smooth scroll & active nav JS -->
-  <script>
-    // Smooth scrolling
-    document.querySelectorAll('a[href^="#"]').forEach(link => {
-      link.addEventListener('click', e => {
-        e.preventDefault();
-        document.querySelector(link.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
-      });
-    }); /* edited */
-
-    // Highlight active section in nav
-    const sections = document.querySelectorAll("section");
-    const navLinks = document.querySelectorAll(".top-nav a");
-    window.addEventListener("scroll", () => {
-      let current = "";
-      sections.forEach(sec => {
-        const sectionTop = sec.offsetTop - 60;
-        if (pageYOffset >= sectionTop) current = sec.getAttribute("id");
-      });
-      navLinks.forEach(link => {
-        link.classList.remove("active"); /* edited
+</body>
+</html>
