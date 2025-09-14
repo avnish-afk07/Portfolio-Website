@@ -32,7 +32,7 @@
       <section class="hero">
         <div class="hero-left card intro">
           <h1 class="hero-title">Hey, I'm <span class="neon">Avnish</span></h1>
-          <p class="hero-sub">A CSE Student at Chitkara University. This portfolio is built with HTML &amp; CSS only — dark theme with purple neon accents.</p>
+          <p class="hero-sub">A CSE Student at Chitkara University. This portfolio is built with HTML & CSS only — dark theme with purple neon accents.</p>
 
           <div class="cta-row">
             <a class="btn" href="#projects">View Projects</a>
@@ -79,7 +79,7 @@
           <h2 class="section-title"><span class="dot" aria-hidden="true"></span> Quick Facts</h2>
           <div class="panel facts">
             <p><strong>Location:</strong> Kurukshetra, INDIA</p>
-            <p><strong>Availability:</strong> Open for student projects, interviews &amp; Tech Club/Community Roles</p>
+            <p><strong>Availability:</strong> Open for student projects, interviews & Tech Club/Community Roles</p>
           </div>
         </aside>
       </section>
@@ -101,7 +101,7 @@
               <div class="thumb">P2</div>
               <div class="proj-body">
                 <h3 class="proj-title">Portfolio Template</h3>
-                <p class="proj-desc">Personal portfolio theme page with dark neon aesthetics and fully customizable and accessible throughout the devices.(this template).</p>
+                <p class="proj-desc">Personal portfolio theme page with dark neon aesthetics.</p>
               </div>
             </article>
 
@@ -145,7 +145,7 @@
         <aside class="right-col">
           <h2 class="section-title"><span class="dot" aria-hidden="true"></span> Resume</h2>
           <div class="panel resume-panel">
-            <p class="resume-note">My Resume is here </p>
+            <p class="resume-note">My Resume is here.</p>
             <a class="btn" href="#" role="button" aria-disabled="true">Download PDF</a>
           </div>
         </aside>
@@ -157,15 +157,24 @@
     </footer>
   </div>
 
-  <!-- Smooth scroll JS -->
+  <!-- Smooth scroll & active nav JS -->
   <script>
+    // Smooth scrolling
     document.querySelectorAll('a[href^="#"]').forEach(link => {
       link.addEventListener('click', e => {
         e.preventDefault();
         document.querySelector(link.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
       });
     }); /* edited */
-  </script>
-</body>
-</html>
 
+    // Highlight active section in nav
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".top-nav a");
+    window.addEventListener("scroll", () => {
+      let current = "";
+      sections.forEach(sec => {
+        const sectionTop = sec.offsetTop - 60;
+        if (pageYOffset >= sectionTop) current = sec.getAttribute("id");
+      });
+      navLinks.forEach(link => {
+        link.classList.remove("active"); /* edited
