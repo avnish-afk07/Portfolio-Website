@@ -376,3 +376,51 @@ body {
     margin: 0 10px;
   }
 }
+/* Hero CTA buttons same style as project blocks */
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.cta-row .btn {
+  flex: 1; /* equal width */
+  min-width: 120px; /* prevent too small on mobile */
+  height: 50px; /* same height as project thumbnails */
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: 1px solid rgba(155,89,255,0.3);
+  background: rgba(155,89,255,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.cta-row .btn:hover {
+  background: rgba(155,89,255,0.2);
+  box-shadow: 0 0 15px rgba(155,89,255,0.5);
+}
+
+/* Status text stays below buttons */
+.cta-row .status {
+  width: 100%;
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* Responsive: stack buttons on mobile */
+@media (max-width: 900px) {
+  .cta-row {
+    flex-direction: column;
+  }
+  .cta-row .btn {
+    width: 100%;
+  }
+}
+
