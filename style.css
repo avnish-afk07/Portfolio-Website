@@ -302,3 +302,10 @@ body {
     grid-template-columns: 1fr;
   }
 }
+/* Hide navigation on small screens (mobile) */
+@media (max-width: 600px) {  /* edited */
+  .top-nav {
+    display: none;  /* hide nav buttons on small devices */ /* edited */
+  }
+}
+
