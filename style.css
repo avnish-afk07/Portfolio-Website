@@ -302,21 +302,28 @@ body {
     grid-template-columns: 1fr;
   }
 }
-@media (max-width: 600px) {
+/* Mobile nav hidden by default */
+@media (max-width: 900px) { /* edited: improved for large phones */
   .top-nav {
-    display: none; /* hide nav by default */ /* edited */
+    max-height: 0; /* hidden */
+    overflow: hidden;
     flex-direction: column;
     gap: 8px;
     background: var(--panel);
-    padding: 12px;
+    padding: 0 12px;
     border-radius: 8px;
-    position: absolute;
-    top: 70px; /* adjust depending on header height */
-    right: 28px; /* same as container padding */
-    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    position: relative; /* push content down */
+    transition: max-height 0.4s ease, padding 0.4s ease; /* smooth animation */ /* edited */
   }
 
   .top-nav.show {
-    display: flex; /* show nav when active */ /* edited */
+    max-height: 300px; /* enough to show all links */ /* edited */
+    padding: 12px; /* add padding when visible */ /* edited */
+  }
+
+  .site-header {
+    flex-direction: column; /* stacked on mobile */ /* edited */
+    align-items: flex-start; /* align logo and nav left */ /* edited */
+    gap: 10px;
   }
 }
