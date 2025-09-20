@@ -33,7 +33,7 @@
       <section class="hero">
         <div class="hero-left card intro">
           <h1 class="hero-title">Hey, I'm <span class="neon">Avnish</span></h1>
-          <p class="hero-sub">A CSE Student at Chitkara University. This portfolio is built with HTML &amp; CSS only — dark theme with purple neon accents.</p>
+          <p class="hero-sub">A CSE Student at Chitkara University.</p>
 
           <div class="cta-row">
             <a class="btn" href="#projects">View Projects</a>
@@ -71,8 +71,8 @@
               <li class="skill">C++</li>
               <li class="skill">MySql</li>
               <li class="skill">HTML</li>
-              <li class="skill">CSS (basics)</li>
-              <li class="skill">Github(basics)</li>
+              <li class="skill">CSS</li>
+              <li class="skill">Git &amp; Github</li>
             </ul>
           </div>
         </div>
@@ -122,7 +122,7 @@
             <ul>
               <li>I build tech that matters.</li>
               <li>Curious to learn and know new technologies.</li>
-              <li>Currently learning about AI & ML/Deep Learning and doing DSA</li>
+              <li>Currently learning about AI & ML/Deep Learning and DSA</li>
             </ul>
           </div>
         </aside>
