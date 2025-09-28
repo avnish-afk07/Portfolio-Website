@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 <br>
-Note:This repo containes my personal website and its purely meant for my personal use.
+Note:This repo contains my personal website source code and its purely meant for my personal use.
 Author:Avnish Saini
 <br>
 //If you want to see my website just visit www.avnishsaini.com
